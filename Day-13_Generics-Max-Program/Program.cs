@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Find Maximum Problem using Generics!!!");
-            Console.WriteLine("1.Compare three integer numbers \n2.Compare three float numbers \n3.Compare three string values \n4.Compare three values using Generic Method");
+            Console.WriteLine("1.Compare three integer numbers \n2.Compare three float numbers \n3.Compare three string values \n4.Compare three values using Generic Method \n5.Compare three values using Generic Class");
             Console.WriteLine("Please choose the option to execute : ");
 
             int option = Convert.ToInt32(Console.ReadLine());
@@ -40,6 +40,15 @@
                     Console.WriteLine(RefectorMethod.MaximumValue(65, 20, 10));
                     Console.WriteLine(RefectorMethod.MaximumValue(10.2f, 20.5f, 20.5f));
                     Console.WriteLine(RefectorMethod.MaximumValue("90", "7", "3"));
+                    break;
+                case 5:
+                    Console.WriteLine("Executing three test cases for Finding Maximum Value using Generic Class");
+                    Console.WriteLine(RefactorClass<int>.MaximumValue(30, 65, 20));
+                    Console.WriteLine(RefactorClass<float>.MaximumValue(10.2f, 20.5f, 20.5f));
+                    Console.WriteLine(RefactorClass<string>.MaximumValue("1", "89", "3"));
+                    break;
+                default:
+                    Console.WriteLine("Invalid option, please choose again.");
                     break;
             }
         }
