@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Find Maximum Problem using Generics!!!");
-            Console.WriteLine("1.Compare three integer numbers \n2.Compare three float numbers");
+            Console.WriteLine("1.Compare three integer numbers \n2.Compare three float numbers \n3.Compare three string values");
             Console.WriteLine("Please choose the option to execute : ");
 
             int option = Convert.ToInt32(Console.ReadLine());
@@ -28,6 +28,12 @@
                     Console.WriteLine(MaximumFloats.MaxFloatNumber(34.2f, 25.7f, 20.5f));
                     Console.WriteLine(MaximumFloats.MaxFloatNumber(60f, 88.9f, 100.0f));
                     Console.WriteLine(MaximumFloats.MaxFloatNumber(5.5f, 45.5f, 2.9f));
+                    break;
+                case 3:
+                    Console.WriteLine("Executing three test cases for Finding Maximum String Value");
+                    Console.WriteLine(MaximumString.MaxStringValue("2", "40", "8"));
+                    Console.WriteLine(MaximumString.MaxStringValue("1", "5", "6"));
+                    Console.WriteLine(MaximumString.MaxStringValue("90", "7", "3"));
                     break;
             }
         }
