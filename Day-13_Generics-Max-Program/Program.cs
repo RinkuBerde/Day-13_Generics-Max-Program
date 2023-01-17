@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Find Maximum Problem using Generics!!!");
-            Console.WriteLine("1.Compare three integer numbers \n2.Compare three float numbers \n3.Compare three string values");
+            Console.WriteLine("1.Compare three integer numbers \n2.Compare three float numbers \n3.Compare three string values \n4.Compare three values using Generic Method");
             Console.WriteLine("Please choose the option to execute : ");
 
             int option = Convert.ToInt32(Console.ReadLine());
@@ -34,6 +34,12 @@
                     Console.WriteLine(MaximumString.MaxStringValue("2", "40", "8"));
                     Console.WriteLine(MaximumString.MaxStringValue("1", "5", "6"));
                     Console.WriteLine(MaximumString.MaxStringValue("90", "7", "3"));
+                    break;
+                case 4:
+                    Console.WriteLine("Executing three test cases for Finding Maximum Value using Generic Method");
+                    Console.WriteLine(RefectorMethod.MaximumValue(65, 20, 10));
+                    Console.WriteLine(RefectorMethod.MaximumValue(10.2f, 20.5f, 20.5f));
+                    Console.WriteLine(RefectorMethod.MaximumValue("90", "7", "3"));
                     break;
             }
         }
